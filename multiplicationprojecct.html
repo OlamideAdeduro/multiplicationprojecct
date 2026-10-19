@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Multiplication Project</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style-5.css">
+</head>
+
+<body>
+
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                Multiplication Calculator
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main section -->
+    <main class="container py-5">
+
+        <h1 class="text-center mb-4">
+            Simple Multiplication
+        </h1>
+
+        <div class="card shadow mx-auto calculator-card">
+            <div class="card-body">
+
+                <h2 class="text-center mb-4">
+                    Multiply Two Numbers
+                </h2>
+
+                <label for="number1" class="form-label">
+                    Enter first number
+                </label>
+
+                <input
+                    type="number"
+                    id="number1"
+                    class="form-control mb-3"
+                    placeholder="Enter first number">
+
+                <label for="number2" class="form-label">
+                    Enter second number
+                </label>
+
+                <input
+                    type="number"
+                    id="number2"
+                    class="form-control mb-3"
+                    placeholder="Enter second number">
+
+                <button
+                    class="btn btn-primary w-100"
+                    onclick="calculateMultiplication()">
+                    Multiply
+                </button>
+
+                <div class="alert alert-success mt-4 text-center">
+                    <h3>Result</h3>
+                    <p id="result" class="fs-4 mb-0">
+                        Your result will appear here.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-dark text-white text-center p-3">
+        <p class="mb-0">
+            Created by Olamide | JavaScript Project 3
+        </p>
+    </footer>
+
+    <script src="script-5.js"></script>
+</body>
+</html>
